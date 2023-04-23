@@ -43,7 +43,8 @@ dependencies:
   flutter_event_calendar: ^1.0.0
   syncfusion_flutter_calendar: ^21.1.41
   font_awesome_flutter: ^10.4.0
-  firebase_auth: ^4.4.2
+  firebase_auth: ^4.2.2
+  firebase_core: ^2.10.0
 
 dev_dependencies:
   flutter_test:
