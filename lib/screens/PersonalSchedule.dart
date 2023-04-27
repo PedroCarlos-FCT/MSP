@@ -26,7 +26,7 @@ class _PersonalSchedulePageState extends State<PersonalSchedule> {
                 child: Material(
                   elevation: 10,
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       gradient: LinearGradient(colors: [
                         Color.fromARGB(255, 2, 77, 137),
                         Color.fromARGB(255, 106, 185, 249)
@@ -43,27 +43,25 @@ class _PersonalSchedulePageState extends State<PersonalSchedule> {
                             border:
                             Border.all(color: Colors.grey, width: 2),
                           ),
-                          child: Expanded(
-                            child: SfCalendar(
-                              backgroundColor: Colors.white,
-                              dataSource: _getCalendarDataSource(),
-                              showNavigationArrow: true,
-                              view: CalendarView.month,
-                              monthViewSettings:
-                              const MonthViewSettings(),
-                              initialSelectedDate: DateTime.now(),
-                              todayHighlightColor: Colors.white,
-                              todayTextStyle:
-                              TextStyle(color: Colors.black),
-                              selectionDecoration: BoxDecoration(
-                                color: Colors.transparent,
-                                border: Border.all(
-                                    color: Colors.white, width: 2),
-                                borderRadius:
-                                const BorderRadius.all(
-                                    Radius.circular(4)),
-                                shape: BoxShape.rectangle,
-                              ),
+                          child: SfCalendar(
+                            backgroundColor: Colors.white,
+                            dataSource: _getCalendarDataSource(),
+                            showNavigationArrow: true,
+                            view: CalendarView.month,
+                            monthViewSettings:
+                            const MonthViewSettings(),
+                            initialSelectedDate: DateTime.now(),
+                            todayHighlightColor: Colors.white,
+                            todayTextStyle:
+                            const TextStyle(color: Colors.black),
+                            selectionDecoration: BoxDecoration(
+                              color: Colors.transparent,
+                              border: Border.all(
+                                  color: Colors.white, width: 2),
+                              borderRadius:
+                              const BorderRadius.all(
+                                  Radius.circular(4)),
+                              shape: BoxShape.rectangle,
                             ),
                           ),
                         ),
@@ -78,18 +76,18 @@ class _PersonalSchedulePageState extends State<PersonalSchedule> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Your upcoming events",
                         style: TextStyle(fontSize: 30),
                       ),
-                      SizedBox(height: 20),
-                      Container(
+                      const SizedBox(height: 20),
+                      SizedBox(
                         width: double.infinity,
                         child: ListView.builder(
                           shrinkWrap: true,
                           itemCount: 8,
                           itemBuilder: (context, index) {
-                            return EventCard(
+                            return const EventCard(
                               className: 'Math 101',
                               time: '9:00 AM - 10:30 AM',
                               instructor: 'John Doe',
@@ -115,7 +113,7 @@ class _PersonalSchedulePageState extends State<PersonalSchedule> {
     List<Appointment> appointments = <Appointment>[];
     appointments.add(Appointment(
       startTime: DateTime.now(),
-      endTime: DateTime.now().add(Duration(minutes: 90)),
+      endTime: DateTime.now().add(const Duration(minutes: 90)),
       subject: 'Meeting',
       color: Colors.blue,
       startTimeZone: '',

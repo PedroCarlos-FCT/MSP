@@ -54,7 +54,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   ],
                 ),
                 const SizedBox(height: 20),*/
-                    reusableText("Enter UserName", Icons.person_outline, false,
+                    reusableText("Enter Email", Icons.person_outline, false,
                         _emailTextController),
                     const SizedBox(
                       height: 20,

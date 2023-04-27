@@ -46,7 +46,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-    String email = "fireBase_Email";
+    String email = widget.user.email;
     List<ClassInfo> classes = [];
     List<Subscription> subscriptions = [];
 
