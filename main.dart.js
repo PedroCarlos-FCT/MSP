@@ -88645,7 +88645,7 @@ p.toString
 A.yo(null,new A.azx(),p,null,!0,t.z)}p=q.r
 o=$.kf().a
 q.w.toString
-n=A.lv("https","europe-west2-msp-gym.cloudfunctions.net","/app/classes/"+p,null)
+n=A.lv("https","europe-west2-msp-gym.cloudfunctions.net","/app/classes/"+p+"/subscribe",null)
 m=t.N
 l=A.az(["content-type","application/json","userId",o],m,m)
 s=2
