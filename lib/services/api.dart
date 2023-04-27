@@ -335,7 +335,7 @@ class APIService {
   }
 
   Future<http.Response> subscribeToClass(String classId, String userId) {
-    Uri uri = Uri.https(BASE_API_URL, '/app/classes/$classId');
+    Uri uri = Uri.https(BASE_API_URL, '/app/classes/$classId/subscribe');
     Map<String, String> headers = {
       HttpHeaders.contentTypeHeader: 'application/json',
       'userId': userId,
